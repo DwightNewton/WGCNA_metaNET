@@ -339,8 +339,8 @@ for (i in datalist){
 }
 
 
-# beta=5 for all: (scalefree R^2 > 0.9) for all cell-types
-# for just ncounts(no log or VST trans): beta = 4 (lowest, or 5 to be consistent)
+# beta=6 for all: (scalefree R^2 > 0.9) for all cell-types
+# for just ncounts(no log or VST trans): beta = 4-6 (lowest, or 6 to be consistent)
 # Use only genes which are common across all cell-types - 16853 genes
 genelist <- intersect(colnames(PVexpData), colnames(PYR23expData))
 genelist <- intersect(genelist, colnames(PYR56expData))
